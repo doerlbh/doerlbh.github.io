@@ -17,9 +17,10 @@ custom:
    #     Indie: Indie
     categories:
         - name: Proj
-            title: Project
+          title: Project
+
         - name: Idea
-            title: Idea
+          title: Idea
 #        - name: Baker
  #           title: Baker Lab
   #      - name: Olavarria
