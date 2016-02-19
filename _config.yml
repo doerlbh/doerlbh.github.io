@@ -35,11 +35,11 @@ custom:
 meta:
     author:
         name: Baihan Lin
-        email: doerlbh@gmail.com
+        email: doerlbh@gmail.com 
 #        disqus: your-short-name-for-disqus           # Disqus缩略标识
         gcse: 006274521208867279600:ldw93qigkgm    # Google自定义搜索标识ID
         github: doerlbh                 # GitHub账号
-        gravatar: c3f17efc644dc613f335001adcd23250  # Gravatar头像标识
+        gravatar: c3f17efc644dc613f335001adcd23250   # Gravatar头像标识
 
     # disqus: disqus.com/embed.js                     # Disqus评论的JS地址
     # gapi: http://www.google.com/jsapi               # Google API地址
