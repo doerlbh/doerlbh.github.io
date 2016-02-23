@@ -11,6 +11,7 @@ custom:
     category:
         Proj: Project
         Idea: Idea
+        Paper: Paper
 #        Baker: Baker Lab
  #       Olavarria: Olavarria Lab
   #      Teng: Teng Lab
@@ -21,6 +22,10 @@ custom:
 
         - name: Idea
           title: Idea
+
+        - name: Paper
+          title: Paper
+          
 #        - name: Baker
  #           title: Baker Lab
   #      - name: Olavarria
