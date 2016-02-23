@@ -16,6 +16,7 @@ custom:
  #       Olavarria: Olavarria Lab
   #      Teng: Teng Lab
    #     Indie: Indie
+
     categories:
         - name: Proj
           title: Project
@@ -25,7 +26,7 @@ custom:
 
         - name: Paper
           title: Paper
-          
+
 #        - name: Baker
  #           title: Baker Lab
   #      - name: Olavarria
@@ -41,7 +42,7 @@ meta:
     author:
         name: Baihan Lin
         email: doerlbh@gmail.com
-         
+
 #        disqus: your-short-name-for-disqus           # Disqus缩略标识
         gcse: 006274521208867279600:ldw93qigkgm    # Google自定义搜索标识ID
         github: doerlbh                 # GitHub账号
