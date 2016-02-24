@@ -1,3 +1,4 @@
+markdown: kramdown
 safe: false
 permalink: /posts/:title.html
 exclude:
@@ -16,12 +17,13 @@ custom:
  #       Olavarria: Olavarria Lab
   #      Teng: Teng Lab
    #     Indie: Indie
-
     categories:
         - name: Proj
           title: Project
+
         - name: Idea
           title: Idea
+
         - name: Paper
           title: Paper
 
@@ -39,7 +41,8 @@ custom:
 meta:
     author:
         name: Baihan Lin
-        email: c3f17efc644dc613f335001adcd23250
+        email: doerlbh@gmail.com
+        disqus: 
         gcse: 006274521208867279600:ldw93qigkgm    # Google自定义搜索标识ID
         github: doerlbh                 # GitHub账号
         gravatar: c3f17efc644dc613f335001adcd23250   # Gravatar头像标识
