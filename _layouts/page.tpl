@@ -19,7 +19,10 @@
 {% endfor %}
 </head>
 
+<!--
 <body class="{{ page.pageClass }}">
+-->
+<body class="{{ layout.class }}">
 
 <div class="main">
 	{{ content }}
