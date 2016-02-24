@@ -1,4 +1,4 @@
-#markdown: kramdown
+markdown: kramdown
 safe: false
 permalink: /posts/:title.html
 exclude:
@@ -6,7 +6,7 @@ exclude:
 
 name: doerlbh
 host: github.io
-desc: Some description of your site.
+desc: Personal Updates of my Life with Wonder~
 
 custom:
     category:
@@ -20,10 +20,8 @@ custom:
     categories:
         - name: Proj
           title: Project
-
         - name: Idea
           title: Idea
-
         - name: Paper
           title: Paper
 
