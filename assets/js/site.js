@@ -132,6 +132,7 @@ var site = {
 	}
 };
 
+/*
 site.ScrollFollow = elf().Class({
 	constructor: function (node, args) {
 		this.node = node;
@@ -272,6 +273,8 @@ elf(function () {
 		initer && elf(initer);
 	});
 });
+
+*/
 
 elf(function () {
 	hljs.initHighlighting();
