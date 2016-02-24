@@ -1,4 +1,4 @@
-markdown: kramdown
+#markdown: kramdown
 safe: false
 permalink: /posts/:title.html
 exclude:
