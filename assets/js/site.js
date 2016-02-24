@@ -8,11 +8,14 @@
 
 var site = {
 	InitMap: {
+		
 		list: function () {
+			hljs.initHighlighting();
 			site.VAR_AUTO_LOAD_ON_SCROLL && elf(window).on('scroll', site.Handlers.scrolling);
 		},
 		
 		post: function () {
+			hljs.initHighlighting();
 			var disqusUrl = site.URL_DISCUS_COMMENT;
 			disqusUrl && elf().loadScript(disqusUrl, {});
 		},
@@ -22,6 +25,20 @@ var site = {
 			site.VAR_GOOGLE_CUSTOM_SEARCH_ID &&
 			elf().loadScript(site.URL_GOOGLE_API, {
 				onload: site.Handlers.onGCSEAPILoad
+			});
+		}
+
+		timeline: function () {
+			elf('#timeline div.meta').forEach(function (item) {
+				var metaNode = elf(item);
+				metaNode.scrollFollow({
+					side: 'left',
+					minWidth: 640,
+					sideOffset: -150,
+					marginTop: 10,
+					referId: elf().mark(item.parentNode),
+					wrapId: elf().mark(metaNode.parent().query('div.content')[0])
+				});
 			});
 		}
 	},
@@ -94,7 +111,8 @@ var site = {
 				customSearchControl.execute(query);
 			}
 		}
-	},
+	}
+
 	
 	Util: {
 		
