@@ -9,10 +9,10 @@
 }
 
 body {
-	font-family: "Liberation Mono", Consolas, Courier, monospace;
+	font-family: "Liberation Mono", Georgia, Consolas, Courier, monospace;
 }
 .reveal code {
-	font-family: "Liberation Mono", Consolas, Courier, monospace;
+	font-family: "Liberation Mono", Georgia, Consolas, Courier, monospace;
 }
 
 .reveal h1,

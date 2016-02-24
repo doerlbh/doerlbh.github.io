@@ -132,6 +132,146 @@ var site = {
 	}
 };
 
+site.ScrollFollow = elf().Class({
+	constructor: function (node, args) {
+		this.node = node;
+		elf().copy(args, this);
+		this.marginTop = this.marginTop || 0;
+		var boundle = this._handler.bind(this);
+		if (document.body.offsetWidth > this.minWidth) {
+			elf(window).on('scroll', boundle);
+			elf(window).on('resize', boundle);
+			boundle();
+		}
+	},
+	
+	getDocumentElement: function () {
+		return elf().Chrome || elf().Safari ? document.body : document.documentElement;
+	},
+	
+	getScrollTop: function () {
+		return this.getDocumentElement().scrollTop;
+	},
+	
+	getStartTop: function () {
+		return this.node.getPosition(this.getDocumentElement()).y;
+	},
+	
+	getOriginTop: function () {
+		return typeof this.originTop != 'undefined' ? this.originTop
+			: (this.originTop = this.node.getPosition(this.getDocumentElement()).y -
+				elf().getPosition(elf().g(this.wrapId), this.getDocumentElement()).y);
+	},
+
+	getStartLeft: function () {
+		return this.node.getPosition(this.getDocumentElement()).x;
+	},
+	
+	getOriginLeft: function () {
+		return typeof this.originLeft != 'undefined' ? this.originLeft
+			: (this.originLeft = this.node.getPosition(this.getDocumentElement()).x -
+				elf().getPosition(elf().g(this.wrapId), this.getDocumentElement()).x);
+	},
+	
+	getFollowingBottom: function () {
+		var content = elf().g(this.referId);
+		return (content.offsetHeight +
+			elf().getPosition(elf().g(this.referId), this.getDocumentElement()).y -
+			elf().getPosition(elf().g(this.wrapId), this.getDocumentElement()).y -
+			this.getFollowingHeight());
+	},
+	
+	getFollowingAbsBottom: function () {
+		var content = elf().g(this.referId);
+		return elf().getPosition(content, this.getDocumentElement()).y + content.offsetHeight;
+	},
+	
+	getFollowingHeight: function () {
+		return this.node[0].offsetHeight;
+	},
+	
+	getFollowingWidth: function () {
+		return this.node[0].offsetWidth;
+	},
+	
+	getFollowingMargin: function () {
+		return 0;
+	},
+	
+	getContentWidth: function () {
+		return elf().g(this.wrapId).offsetWidth;
+	},
+	
+	sideMap: {
+		left: -1,
+		right: 1
+	},
+	
+	_handler: function (ev) {
+		var scrollTop = this.getScrollTop();
+		var startTop = typeof this.startTop != 'undefined' ?
+			this.startTop :
+			(this.startTop = this.getStartTop());
+		var startLeft = typeof this.startLeft != 'undefined' ?
+			this.startLeft :
+			(this.startLeft = this.getStartLeft());
+		var originTop = this.getOriginTop();
+		var originLeft = this.getOriginLeft();
+		var followingBottom = this.followingBottom = this.getFollowingAbsBottom();
+		var followingWidth = this.followingWidth || (this.followingWidth = this.getFollowingWidth());
+		var followingHeight = this.getFollowingHeight();
+		var followingMargin = this.getFollowingMargin();
+		var docElem = this.getDocumentElement();
+		var pageWidth = docElem.offsetWidth;
+		var contentWidth = this.contentWidth || (this.contentWidth = this.getContentWidth());
+		var side = this.sideMap[this.side];
+		var props = {};
+		if (scrollTop >= startTop - this.marginTop) {
+			if (followingBottom < scrollTop + followingHeight + this.marginTop) {
+				elf().mix(props, {position: 'absolute', top: this.getFollowingBottom() + 'px'});
+				props[this.side] = '';
+			} else {
+				props.position = 'fixed';
+				props.top = this.marginTop + 'px';
+				props.left = startLeft + 'px';
+				// var screenSub = pageWidth - contentWidth - 46;
+				// var sideOffset = Math.max(0, screenSub) + (this.sideOffset + docElem.scrollLeft * side);
+				// if (pageWidth < contentWidth && side > 0) {
+				// 	sideOffset += screenSub;
+				// }
+				// props[this.side] = sideOffset + 'px';
+			}
+		} else if (pageWidth > this.minWidth) {
+			props.position = 'absolute';
+			props.top = originTop + 'px';
+			props[this.side] = this.sideOffset + 'px';
+		} else {
+			props[this.side] = originLeft;
+		}
+		props && this.node.css(props);
+	}
+});
+
+elf().implement(js.dom.Node, {
+	scrollFollow: function (options) {
+		this.scrollFollow = new site.ScrollFollow(this, options);
+	}
+});
+
+elf(function () {
+	if (elf.client.Device) {
+		elf(document.body).addClass('device-mobile');
+	}
+	site.Translation.translate(navigator.language || 'zh-CN');
+
+	elf('a.mail').attr('href', elf().template('mailto:#{0}@#{1}', 'mytharcher', 'gmail.com'));
+
+	var module = document.body.className.replace(/page-type-/g, '').split(' ');
+	module.forEach(function (item) {
+		var initer = site.InitMap[item];
+		initer && elf(initer);
+	});
+});
 
 elf(function () {
 	hljs.initHighlighting();
