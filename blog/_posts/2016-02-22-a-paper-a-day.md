@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Launch "A Paper A Day" Plan
-category: Paper, Idea [Paper, Idea]
+category: [Paper, Idea]
 ---
 
 I will read at least a paper a day, and persist on it.
