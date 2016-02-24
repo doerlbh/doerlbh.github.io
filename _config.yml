@@ -1,4 +1,3 @@
-markdown: kramdown
 safe: false
 permalink: /posts/:title.html
 exclude:
@@ -6,7 +5,7 @@ exclude:
 
 name: doerlbh
 host: github.io
-desc: Personal Updates of my Life with Wonder~
+desc: Updates of my Life with Wonder~
 
 custom:
     category:
@@ -24,7 +23,6 @@ custom:
           title: Idea
         - name: Paper
           title: Paper
-
 #        - name: Baker
  #           title: Baker Lab
   #      - name: Olavarria
@@ -34,19 +32,17 @@ custom:
       #  - name: Indie
        #     title: Indie
 
-    scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
+    scrollingLoadCount: 4                          # 滚屏自动加载文章数量，“0”为关闭
 
 meta:
     author:
         name: Baihan Lin
         email: doerlbh@gmail.com
-  #      disqus: 
+#        disqus: your-short-name-for-disqus           # Disqus缩略标识
         gcse: 006274521208867279600:ldw93qigkgm    # Google自定义搜索标识ID
         github: doerlbh                 # GitHub账号
-        gravatar: c3f17efc644dc613f335001adcd23250   # Gravatar头像标识
+        gravatar: c3f17efc644dc613f335001adcd23250  # Gravatar头像标识
 
-
-#        disqus: your-short-name-for-disqus           # Disqus缩略标识
     # disqus: disqus.com/embed.js                     # Disqus评论的JS地址
-     gapi: http://www.google.com/jsapi               # Google API地址
-     gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
+    gapi: http://www.google.com/jsapi               # Google API地址
+    gravatar: http://en.gravatar.com/avatar/        # Gravatar头像服务器地址
