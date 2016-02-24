@@ -4,7 +4,7 @@ permalink: blog/posts/:title
 exclude:
   - README.md
 
-name: doerlbh
+name: DoerLBH
 host: github.io
 desc: Updates of my Life with Wonder~
 

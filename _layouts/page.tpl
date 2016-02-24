@@ -6,8 +6,10 @@
 <meta name="keywords" content="{{ page.tags | join: ',' }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>{{ site.blog.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
+{*
 <link rel="icon" href="/favicon.png" type="image/x-icon" />
 <link rel="shortcut icon" href="/TalkinMIT.png" type="image/x-icon" />
+*}
 <link href="http://{{ site.host }}/blog/feed.xml" rel="alternate" title="{{ site.blog.name }}" type="application/atom+xml" />
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/blog.css" />
@@ -36,8 +38,8 @@
 	</nav>
 	
 	<form action="/search/" class="block block-search">
-		<h3>搜索</h3>
-		<p><input type="search" name="q" placeholder="输入关键词按回车搜索" /></p>
+		<h3>Search</h3>
+		<p><input type="search" name="q" placeholder="Enter to search keywords" /></p>
 	</form>
 	
 	<div class="block block-about">
@@ -88,7 +90,7 @@ site.URL_GOOGLE_API = '{{site.meta.gapi}}';
 *}
 site.VAR_SITE_NAME = '{{ site.blog.name }}';
 site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
-site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
+site.TPL_SEARCH_TITLE = '#{0} / Search: #{1}';
 site.VAR_AUTO_LOAD_ON_SCROLL = {{ site.custom.scrollingLoadCount }};
 </script>
 {% include baidu-stats.tpl %}
