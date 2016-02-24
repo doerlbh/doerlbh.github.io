@@ -43,14 +43,18 @@
 	</form>
 	
 	<div class="block block-about">
-		<h3>关于</h3>
+		<h3>About Me</h3>
 		<figure>
-			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48" />{% endif %}
-			<figcaption><strong>{{ site.meta.author.name }}</strong></figcaption>
+			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=60" />{% endif %}
+			<figcaption><strong>Baihan Lin ({{ site.meta.author.name }})</strong></figcaption>
 		</figure>
-		<p>生物狗，程序猿，设计狮。Code life with design~ </p>
+		<p>生物狗，程序猿，设计狮。</p>
+		<p >Code life with design~ </p>
+		
+		<p><href="https://github.com/doerlbh" target="_blank">GitHub</p>,
+		<p><href="https://orcid.org/0000-0002-7979-5509" target="_blank">ORCID</p>
 	</div>
-	
+
 	{*
 	<div class="block block-license">
 		<h3>版权申明</h3>
