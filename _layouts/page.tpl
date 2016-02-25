@@ -40,12 +40,15 @@
 	</form>
 	
 	<div class="block block-about">
-		<h3>About</h3>
+		<h3>About me</h3>
 		<figure>
-			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=48" />{% endif %}
-			<figcaption><strong>{{ site.meta.author.name }}</strong></figcaption>
+			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=60" />{% endif %}
+			<figcaption><strong>Baihan Lin ({{ site.meta.author.name }})</strong></figcaption>
 		</figure>
-		<p>Write something about yourself.</p>
+		<p>生物狗，程序猿，设计狮。</p>
+		<p >Code life with design~ </p>
+		<p><href="https://github.com/doerlbh" target="_blank">GitHub</p>,
+		<p><href="https://orcid.org/0000-0002-7979-5509" target="_blank">ORCID</p>
 	</div>
 	
 	<div class="block block-license">
@@ -62,16 +65,21 @@
 	<div class="block block-thank">
 		<h3>Powered by</h3>
 		<p>
-			<a href="http://disqus.com/" target="_blank">Disqus</a>,
+<!--			
+			<a href="http://disqus.com/" target="_blank" title="云评论服务">Disqus</a>,
 			<a href="http://elfjs.com/" target="_blank">elf+js</a>,
+-->
 			<a href="https://github.com/" target="_blank">GitHub</a>,
-			<a href="http://www.google.com/cse/" target="_blank">Google Custom Search</a>,
-			<a href="http://en.gravatar.com/" target="_blank">Gravatar</a>,
+			<a href="http://www.google.com/cse/" target="_blank" title="自定义站内搜索">Google Custom Search</a>,
+			<a href="http://en.gravatar.com/" target="_blank" title="统一头像标识服务">Gravatar</a>,
+<!--
 			<a href="http://softwaremaniacs.org/soft/highlight/en/">HighlightJS</a>,
+-->
 			<a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>,
 			<a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a>
 		</p>
 	</div>
+
 </aside>
 
 <script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
@@ -82,11 +90,12 @@
 {% endfor %}
 <script>
 site.URL_GOOGLE_API = '{{site.meta.gapi}}';
+/*
 site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
-
+*/
 site.VAR_SITE_NAME = "{{ site.name | replace:'"','\"' }}";
 site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
-site.TPL_SEARCH_TITLE = '#{0} / 搜索：#{1}';
+site.TPL_SEARCH_TITLE = '#{0} / Search: #{1}';
 site.VAR_AUTO_LOAD_ON_SCROLL = {{ site.custom.scrollingLoadCount }};
 </script>
 </body>
