@@ -35,7 +35,7 @@
 	-->
 	</figure>
 
-	<h2>Baihan Lin</h2>
+	<h2>Baihan Lin <sub>(DoerLBH@gmail.com)</sub></h2>
 	<p><b>Code life with design~ </b> </p>
 	<p><b>生物狗，程序猿，设计狮</b></p>
 
@@ -54,14 +54,12 @@
 	</nav>
 	
 	<div class="block block-contact">
-		<h3>Contact</h3>
-		<p>  DoerLBH@Gmail.com</p>
-		<p>  University of Washington</p>
 		<p> </p>
 			<a href="https://github.com/doerlbh" target="_blank"><img src="/logos/github.png" height="30" width="30"/></a>
 			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="30" width="30"/></a>
 			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="30" width="30"/></a>
 			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="30" width="30"/></a>
+			<a href="/logos/wechatQRC.png" target="_blank"><img src="/logos/wechat.png" height="30" width="30"/></a>
 		</p>
 	</div>
 	
@@ -80,7 +78,6 @@
 			<a href="http://disqus.com/" target="_blank" title="云评论服务">Disqus</a>,
 			<a href="http://elfjs.com/" target="_blank">elf+js</a>,
 -->
-			<br>
 			<a href="https://github.com/" target="_blank">GitHub</a>,
 			<a href="http://www.google.com/cse/" target="_blank" title="自定义站内搜索">Google Custom Search</a>,
 			<a href="http://en.gravatar.com/" target="_blank" title="统一头像标识服务">Gravatar</a>,
@@ -94,7 +91,7 @@
 
 	<div class="block block-license">
 		<h3>Copyright</h3>
-		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a></p>
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a></p>
 	</div>
 
 
