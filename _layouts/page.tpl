@@ -25,8 +25,30 @@
 </div>
 
 <aside>
-	<h2><a href="/">{{ site.name }}</a><a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i></a></h2>
+<!--
+	<h2><a href="/">Baihan Lin</a><a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i></a></h2>
+-->	
+
+	<div class="block block-about">
+		<h3>About me</h3>
+		<figure>
+			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}" height="114" width="114"/>{% endif %}
+			<figcaption><strong>Baihan Lin (University_of_Washington)</strong></figcaption>
+		</figure>
+		<p>生物狗，程序猿，设计狮。</p>
+		<p >Code life with design~ </p>
+		<p>
+			<a href="https://github.com/doerlbh" target="_blank">GitHub</a>,
+			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank">ORCiD</a>,
+			<a href="https://www.linkedin.com/in/doerlbh" target="_blank">Linkedin</a>
+		</p>
+	</div>
 	
+	<form action="/search/" class="block block-search">
+		<h3>Search</h3>
+		<p><input type="search" name="q" placeholder="Search" /></p>
+	</form>
+
 	<nav class="block">
 		<ul>
 		{% for category in site.custom.categories %}<li class="{{ category.name }}"><a href="/category/{{ category.name }}/">{{ category.title }}</a></li>
@@ -34,30 +56,14 @@
 		</ul>
 	</nav>
 	
-	<form action="/search/" class="block block-search">
-		<h3>Search</h3>
-		<p><input type="search" name="q" placeholder="Search" /></p>
-	</form>
 	
-	<div class="block block-about">
-		<h3>About me</h3>
-		<figure>
-			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=60" />{% endif %}
-			<figcaption><strong>Baihan Lin</strong></figcaption>
-		</figure>
-		<p>生物狗，程序猿，设计狮。</p>
-		<p >Code life with design~ </p>
-		<p>
-			<a href="https://github.com/" target="_blank">GitHub</a>,
-			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank">ORCiD</a>,
-		</p>,
-	</div>
-	
+<!--
 	{% if site.meta.author.github %}
 	<div class="block block-fork">
-		<a href="https://github.com/{{ site.meta.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="/find_me_on_GitHub.png" alt="Find me on GitHub"></a>
+		<a href="https://github.com/{{ site.meta.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 	</div>
 	{% endif %}
+-->
 	
 	<div class="block block-thank">
 		<h3>Powered by</h3>
