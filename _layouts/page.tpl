@@ -28,25 +28,21 @@
 <!--
 	<h2><a href="/">Baihan Lin</a><a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i></a></h2>
 -->	
-
-	<div class="block block-about">
-		<h3>About me</h3>
-		<figure>
-			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=200" height="114" width="114"/>{% endif %}
+	<figure>
+			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=200" height="200" width="200"/>{% endif %}
+	<!--		
 			<figcaption><strong>Baihan Lin (University_of_Washington)</strong></figcaption>
-		</figure>
-		<p>生物狗，程序猿，设计狮。</p>
-		<p >Code life with design~ </p>
-		<p>
-			<a href="https://github.com/doerlbh" target="_blank">GitHub</a>,
-			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank">ORCiD</a>,
-			<a href="https://www.linkedin.com/in/doerlbh" target="_blank">Linkedin</a>
-		</p>
-	</div>
+	-->
+	</figure>
+
+	<h2>Baihan Lin（林柏翰）</h2>
+	<p>生物狗，程序猿，设计狮。</p>
+	<p >Code life with design~ </p>
+
 	
 	<form action="/search/" class="block block-search">
 		<h3>Search</h3>
-		<p><input type="search" name="q" placeholder="Search" /></p>
+		<p>  <input type="search" name="q" placeholder="Search" /></p>
 	</form>
 
 	<nav class="block">
@@ -56,6 +52,16 @@
 		</ul>
 	</nav>
 	
+	<div class="block block-contact">
+		<h3>Contact</h3>
+		<p>  DoerLBH@Gmail.com</p>
+		<p>  University of Washington</p>
+			<a href="https://github.com/doerlbh" target="_blank"><img src="/logos/github.png" height="60" width="60"/></a>,
+			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="60" width="60"/></a>,
+			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="60" width="60"/></a>, 
+			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="60" width="60"/></a>
+		</p>
+	</div>
 	
 <!--
 	{% if site.meta.author.github %}
