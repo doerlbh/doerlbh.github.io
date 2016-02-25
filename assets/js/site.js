@@ -10,12 +10,12 @@ var site = {
 	InitMap: {
 		
 		list: function () {
-			hljs.initHighlighting();
+			/*hljs.initHighlighting();*/
 			site.VAR_AUTO_LOAD_ON_SCROLL && elf(window).on('scroll', site.Handlers.scrolling);
 		},
 		
 		post: function () {
-			hljs.initHighlighting();
+			/*hljs.initHighlighting();*/
 			var disqusUrl = site.URL_DISCUS_COMMENT;
 			disqusUrl && elf().loadScript(disqusUrl, {});
 		},
