@@ -59,7 +59,7 @@
 			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="30" width="30"/></a>
 			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="30" width="30"/></a>
 			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="30" width="30"/></a>
-			<a href="/logos/wechatQRC.png" target="_blank"><img src="/logos/wechat.png" height="30" width="30"/></a>
+			<a href="/logos/wechatQRC.html" target="_blank"><img src="/logos/wechat.png" height="30" width="30"/></a>
 		</p>
 	</div>
 	
