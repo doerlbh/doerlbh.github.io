@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>{{ site.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
 <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml" />
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/code/github.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/code/sunburst.css" />
 {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
 {% endfor %}
 </head>
@@ -20,7 +20,7 @@
 	{{ content }}
 
 	<footer>
-		<p>&copy; Since 2012</p>
+		<p>&copy; Since 2016 <a href="http://doerlbh.github.io/">doerlbh.github.io</a></p>
 	</footer>
 </div>
 
@@ -51,11 +51,6 @@
 		<p><href="https://orcid.org/0000-0002-7979-5509" target="_blank">ORCID</p>
 	</div>
 	
-	<div class="block block-license">
-		<h3>Copyright</h3>
-		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/" target="_blank" class="hide-target-icon" title="Copyright declaration of site content"><img alt="知识共享许可协议" src="http://i.creativecommons.org/l/by-nc-nd/2.5/cn/88x31.png" /></a></p>
-	</div>
-	
 	{% if site.meta.author.github %}
 	<div class="block block-fork">
 		<a href="https://github.com/{{ site.meta.author.github }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
@@ -78,6 +73,11 @@
 			<a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>,
 			<a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a>
 		</p>
+	</div>
+
+	<div class="block block-license">
+		<h3>Copyright</h3>
+		<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/2.5/cn/" target="_blank" class="hide-target-icon" title="Copyright declaration of site content"><img alt="知识共享许可协议" src="http://i.creativecommons.org/l/by-nc-nd/2.5/cn/88x31.png" /></a></p>
 	</div>
 
 </aside>
