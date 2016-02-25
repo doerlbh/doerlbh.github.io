@@ -29,20 +29,21 @@
 	<h2><a href="/">Baihan Lin</a><a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i></a></h2>
 -->	
 	<figure>
-			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=200" height="200" width="200"/>{% endif %}
+			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=1000" height="200" width="200"/>{% endif %}
 	<!--		
 			<figcaption><strong>Baihan Lin (University_of_Washington)</strong></figcaption>
 	-->
 	</figure>
 
-	<h2>Baihan Lin（林柏翰）</h2>
-	<p>生物狗，程序猿，设计狮。</p>
+	<h2>Baihan Lin</h2>
 	<p >Code life with design~ </p>
+	<p>生物狗，程序猿，设计狮。</p>
 
-	
 	<form action="/search/" class="block block-search">
-		<h3>Search</h3>
-		<p>  <input type="search" name="q" placeholder="Search" /></p>
+	<!--
+		<h3>Search</h3> 
+	-->
+		<p><input type="search" name="q" placeholder="Search" /></p>
 	</form>
 
 	<nav class="block">
@@ -58,8 +59,8 @@
 		<p>  University of Washington</p>
 			<a href="https://github.com/doerlbh" target="_blank"><img src="/logos/github.png" height="60" width="60"/></a>,
 			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="60" width="60"/></a>,
-			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="60" width="60"/></a>, 
-			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="60" width="60"/></a>
+			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="40" width="40"/></a>, 
+			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="40" width="40"/></a>
 		</p>
 	</div>
 	

@@ -38,15 +38,15 @@ input,textarea{resize:none;}
 
 .main{background-color: #fff;}
 
-header{font-size:90%;}
+header{font-size:85%;}
 header h1 .minor{color:#999; font-weight:normal;}
-header .additional{font-size:95%; color:#ccc;}
+header .additional{font-size:90%; color:#ccc;}
 
-aside{background:rgba(238,238,238,.4); font-size:90%;}
+aside{background:rgba(238,238,238,.4); font-size:85%;}
 aside h2{margin:1em 0;}
 aside .feed-link{margin-left:0.5em; color: #e81;}
 aside nav ul{list-style:none; line-height:1.5em;}
-aside nav li:before{content:"> "; font:normal 90%/1em Arial, "黑体"; margin:0 .3em; color: #999;}
+aside nav li:before{content:"> "; font:normal 75%/1em Georgia, "黑体"; margin:0 .3em; color: #999;}
 aside .block{max-width:300px; margin:1.5em 0; line-height:1.5em;}
 aside .block h3{margin:.5em 0;}
 aside .block a{margin:0;}
@@ -55,7 +55,7 @@ aside .block-about figcaption{margin:0.2em 0;}
 aside .block-about figcaption:after{content:'<doerlbh@gmail.com>'; padding-left:.5em; color: #0404B4; font-weight:bold; opacity: 0; transition:opacity 1s; -moz-transition:opacity 1s; -webkit-transition:opacity 1s;}
 aside .block-about:hover figcaption:after{opacity: 0.5;}
 aside .block-fork{position: absolute; top:0; right:0; margin: 0;}
-aside .block-search input{width: 12em; max-width: 100%; margin: 0; padding: 5px; transition: width .3s ease;}
+aside .block-search input{width: 12em; max-width: 80%; margin: 0; padding: 5px; transition: width .3s ease;}
 aside .block-search input:focus{width: 100%;}
 
 footer p{color:#aaa; font-size:75%; line-height:1.6em;}
