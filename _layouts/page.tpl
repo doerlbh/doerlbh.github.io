@@ -55,8 +55,8 @@
 	
 	<div class="block block-contact">
 		<h3>Contact</h3>
-		<p>  <br> DoerLBH@Gmail.com</p>
-		<p>  <br> University of Washington</p>
+		<p>  DoerLBH@Gmail.com</p>
+		<p>  University of Washington</p>
 		<p> </p>
 			<a href="https://github.com/doerlbh" target="_blank"><img src="/logos/github.png" height="30" width="30"/></a>
 			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="30" width="30"/></a>
@@ -83,9 +83,7 @@
 			<br>
 			<a href="https://github.com/" target="_blank">GitHub</a>,
 			<a href="http://www.google.com/cse/" target="_blank" title="自定义站内搜索">Google Custom Search</a>,
-		</p>
-		<p>
-			<br><a href="http://en.gravatar.com/" target="_blank" title="统一头像标识服务">Gravatar</a>,
+			<a href="http://en.gravatar.com/" target="_blank" title="统一头像标识服务">Gravatar</a>,
 <!--
 			<a href="http://softwaremaniacs.org/soft/highlight/en/">HighlightJS</a>,
 -->
