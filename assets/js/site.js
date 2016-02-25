@@ -28,6 +28,7 @@ var site = {
 			});
 		}
 
+/*
 		timeline: function () {
 			elf('#timeline div.meta').forEach(function (item) {
 				var metaNode = elf(item);
@@ -41,6 +42,7 @@ var site = {
 				});
 			});
 		}
+*/
 	},
 	
 	Handlers: {
@@ -111,7 +113,7 @@ var site = {
 				customSearchControl.execute(query);
 			}
 		}
-	}
+	},
 
 	
 	Util: {

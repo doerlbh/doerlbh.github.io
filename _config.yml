@@ -1,11 +1,11 @@
 safe: false
-permalink: posts/:title.html
+permalink: /posts/:title.html
 exclude:
   - README.md
 
 name: DoerLBH
 host: github.io
-desc: Updates of my Life with Wonder~
+desc: Updates of my Life with Wonders~
 
 custom:
     category:

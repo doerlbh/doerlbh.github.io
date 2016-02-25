@@ -8,8 +8,10 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+<!--
 <link rel="icon" href="/TalkinMIT.png" type="image/x-icon" />
 <link rel="shortcut icon" href="/TalkinMIT.png" type="image/x-icon" />
+-->
 
 <link rel="stylesheet" href="/lib/reveal.js/css/reveal.css">
 <link rel="stylesheet" href="/lib/reveal.js/css/theme/default.css" id="theme">
@@ -76,9 +78,6 @@ Reveal.initialize({
 
 
 </script>
-{% include baidu-stats.tpl %}
-
 
 </body>
 </html>
-
