@@ -32,7 +32,7 @@
 	<div class="block block-about">
 		<h3>About me</h3>
 		<figure>
-			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}" height="114" width="114"/>{% endif %}
+			{% if site.meta.author.gravatar %}<img src="{{ site.meta.gravatar}}{{ site.meta.author.gravatar }}?s=200" height="114" width="114"/>{% endif %}
 			<figcaption><strong>Baihan Lin (University_of_Washington)</strong></figcaption>
 		</figure>
 		<p>生物狗，程序猿，设计狮。</p>
