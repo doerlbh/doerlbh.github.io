@@ -74,13 +74,13 @@
 	<div class="block block-thank">
 		<h3>Powered by</h3>
 		<p>
-<!--			
-			<a href="http://disqus.com/" target="_blank" title="云评论服务">Disqus</a>,
+<!--
 			<a href="http://elfjs.com/" target="_blank">elf+js</a>,
 -->
 			<a href="https://github.com/" target="_blank">GitHub</a>,
-			<a href="http://www.google.com/cse/" target="_blank" title="自定义站内搜索">Google Custom Search</a>,
-			<a href="http://en.gravatar.com/" target="_blank" title="统一头像标识服务">Gravatar</a>,
+			<a href="http://disqus.com/" target="_blank" title="Comment">Disqus</a>,
+			<a href="http://www.google.com/cse/" target="_blank" title="In-site-search">Google_CSE</a>,
+			<a href="http://en.gravatar.com/" target="_blank" title="avatar">Gravatar</a>,
 <!--
 			<a href="http://softwaremaniacs.org/soft/highlight/en/">HighlightJS</a>,
 -->
@@ -105,9 +105,8 @@
 {% endfor %}
 <script>
 site.URL_GOOGLE_API = '{{site.meta.gapi}}';
-/*
+
 site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
-*/
 site.VAR_SITE_NAME = "{{ site.name | replace:'"','\"' }}";
 site.VAR_GOOGLE_CUSTOM_SEARCH_ID = '{{ site.meta.author.gcse }}';
 site.TPL_SEARCH_TITLE = '#{0} / Search: #{1}';
