@@ -60,7 +60,7 @@
 			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="28" width="28"/></a>
 			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="28" width="28"/></a>
 			<a href="/logos/wechatQRC.html" target="_blank"><img src="/logos/wechat.png" height="28" width="28"/></a>
-            <a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i><img src="/logos/rss.png" height="28" width="28"/></a>
+            <a href="/feed.xml" class="feed-link" title="Subscribe"><img src="/logos/rss.png" height="28" width="28"/></a>
 <!--			<link href="atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
 -->
 		</p>
