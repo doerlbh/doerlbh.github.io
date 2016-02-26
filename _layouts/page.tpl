@@ -90,13 +90,20 @@
 			<a href="https://github.com/mojombo/jekyll" target="_blank">jekyll</a>,
 			<a href="https://github.com/mytharcher/SimpleGray" target="_blank">SimpleGray</a>
 		</p>
+			<script type="text/javascript">
+			function googleTranslateElementInit() {
+  				new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-74038161-1'}, 'google_translate_element');
+			}
+			</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	</div>
 
-	<div id="google_translate_element", height="5"></div><script type="text/javascript">
+<!--
+	<div id="google_translate_element"></div><script type="text/javascript">
 	function googleTranslateElementInit() {
   		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-74038161-1'}, 'google_translate_element');
 	}
 	</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+-->
 
 	<div class="block block-license">
 		<h3>Copyright</h3>
