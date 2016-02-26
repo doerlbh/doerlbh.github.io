@@ -9,7 +9,7 @@
 <link href="http://{{ site.host }}/feed.xml" rel="alternate" title="{{ site.name }}" type="application/atom+xml" />
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" />
 <link rel="stylesheet" type="text/css" href="/assets/css/site.css" />
-<link rel="stylesheet" type="text/css" href="/assets/css/code/sunburst.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/code/zenburn.css" />
 {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
 {% endfor %}
 </head>
@@ -55,11 +55,14 @@
 	
 	<div class="block block-contact">
 		<p> </p>
-			<a href="https://github.com/doerlbh" target="_blank"><img src="/logos/github.png" height="30" width="30"/></a>
-			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="30" width="30"/></a>
-			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="30" width="30"/></a>
-			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="30" width="30"/></a>
-			<a href="/logos/wechatQRC.html" target="_blank"><img src="/logos/wechat.png" height="30" width="30"/></a>
+			<a href="https://github.com/doerlbh" target="_blank"><img src="/logos/github.png" height="28" width="28"/></a>
+			<a href="https://orcid.org/0000-0002-7979-5509" target="_blank"><img src="/logos/orcid.png" height="28" width="28"/></a>
+			<a href="https://www.linkedin.com/in/doerlbh" target="_blank"><img src="/logos/linkedin.png" height="28" width="28"/></a>
+			<a href="https://www.facebook.com/doerlbh" target="_blank"><img src="/logos/facebook.png" height="28" width="28"/></a>
+			<a href="/logos/wechatQRC.html" target="_blank"><img src="/logos/wechat.png" height="28" width="28"/></a>
+            <a href="/feed.xml" class="feed-link" title="Subscribe"><i class="fa fa-rss-square"></i><img src="/logos/rss.png" height="28" width="28"/></a>
+<!--			<link href="atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
+-->
 		</p>
 	</div>
 	
