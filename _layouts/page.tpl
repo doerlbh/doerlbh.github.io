@@ -92,7 +92,7 @@
 		</p>
 	</div>
 
-	<div id="google_translate_element", height="10"></div><script type="text/javascript">
+	<div id="google_translate_element", height="5"></div><script type="text/javascript">
 	function googleTranslateElementInit() {
   		new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-74038161-1'}, 'google_translate_element');
 	}
