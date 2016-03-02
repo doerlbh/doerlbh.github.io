@@ -20,7 +20,7 @@
 	{{ content }}
 
 	<footer>
-		<p>&copy; Since 2016 <a href="http://doerlbh.github.io/">doerlbh.github.io</a></p>
+		<p>Copyright &copy; 1995 - 2016 Baihan Lin <a href="http://doerlbh.github.io/">doerlbh.github.io</a></p>
 	</footer>
 </div>
 
