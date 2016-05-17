@@ -14,6 +14,7 @@ custom:
         Idea: Idea
         Paper: Paper
         News: News
+        Day: Day
 #        Baker: Baker Lab
  #       Olavarria: Olavarria Lab
   #      Teng: Teng Lab
@@ -27,6 +28,8 @@ custom:
           title: Paper
         - name: News
           title: News
+        - name: Day
+          title: Day
 #        - name: Baker
  #           title: Baker Lab
   #      - name: Olavarria
